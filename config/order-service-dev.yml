@@ -1,8 +1,13 @@
 spring:
   application:
     name: order-service
+  rabbitmq:
+    host: 172.88.6.242
+    port: 5672
+    username: admin
+    password: admin
     
-#需要配合集群搭建,所以要注掉!
+#闇�瑕侀厤鍚堥泦缇ゆ惌寤�,鎵�浠ヨ娉ㄦ帀!
 #server:
 #  port: 8201
 
@@ -16,7 +21,7 @@ feign:
   hystrix:
     enabled: true
 
-#暴露监控端点
+#鏆撮湶鐩戞帶绔偣
 management:
   endpoints:
     web:
